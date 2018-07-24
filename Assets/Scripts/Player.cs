@@ -12,6 +12,7 @@ public class Player : MonoBehaviour {
   Rigidbody2D rb;
   public event Action OnPlayerWin;
   public event Action OnPlayerDeath;
+  public event Action OnUseWeapon;
   private WeaponInventory playerWeapons;
   Vector2 velocity;
 
@@ -28,10 +29,13 @@ public class Player : MonoBehaviour {
 	}
 
   void Update() {
-    CheckForWeaponChange();
+    // CheckForWeaponChange();
 
     if(Input.GetKey(KeyCode.Space)) {
-      playerWeapons.GetWeapon().AttemptUseWeapon();
+      //playerWeapons.GetWeapon().AttemptUseWeapon();
+      if(OnUseWeapon != null) {
+        OnUseWeapon();
+      }
     }
   }
 

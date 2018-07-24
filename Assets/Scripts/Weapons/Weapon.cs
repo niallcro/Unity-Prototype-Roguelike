@@ -7,8 +7,12 @@ public abstract class Weapon : MonoBehaviour {
   [SerializeField]
   protected float weaponCooldownSeconds;
   protected bool canUse = true;
+  protected Player player;
 
-  // protected virtual void Start() {}
+  protected virtual void Start() {
+    player = FindObjectOfType<Player>();
+    player.OnUseWeapon += AttemptUseWeapon;
+  }
 
   // protected virtual void Update() {}
 

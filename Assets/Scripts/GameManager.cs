@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-  public Player player;
+  private Player player;
   LevelManager levelManager;
 
 	// Use this for initialization
