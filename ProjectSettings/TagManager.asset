@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Building
   - Goal
+  - Portal
   layers:
   - Default
   - TransparentFX
