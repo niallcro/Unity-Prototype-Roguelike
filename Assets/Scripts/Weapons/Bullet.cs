@@ -9,17 +9,15 @@ public class Bullet : MonoBehaviour {
   Vector3 target;
   Vector2 direction;
 
-	// Use this for initialization
-	void Start () {
-    Vector3 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+  void Start () {
+    Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
     direction = target - transform.position;
     direction.Normalize();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+  }
+
+  void Update () {
     GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
-	}
+  }
 
   private void OnTriggerEnter2D(Collider2D other) {
     if(other.tag == "Enemy") {
