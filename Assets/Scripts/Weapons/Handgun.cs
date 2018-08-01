@@ -13,6 +13,6 @@ public class Handgun : Weapon {
 
   public override void UseWeapon() {
     print("Using " + gameObject);
-    Instantiate(bullet, muzzle.position, Quaternion.identity);
+    Instantiate(bullet, muzzle.position, muzzle.rotation);
   }
 }

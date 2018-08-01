@@ -9,14 +9,8 @@ public class Bullet : MonoBehaviour {
   Vector3 target;
   Vector2 direction;
 
-  void Start () {
-    Vector3 target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    direction = target - transform.position;
-    direction.Normalize();
-  }
-
   void Update () {
-    GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+    transform.position += transform.up * bulletSpeed * Time.deltaTime;
   }
 
   private void OnTriggerEnter2D(Collider2D other) {
