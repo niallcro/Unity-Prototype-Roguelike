@@ -92,6 +92,8 @@ MonoBehaviour:
   damage: 1
   bulletSpeed: 12
   lifetime: 0.6
+  bulletDestroyEffect: {fileID: 1727724073145996, guid: e1653a70546e0465f8e55f805f78519c,
+    type: 2}
 --- !u!212 &212079271947281602
 SpriteRenderer:
   m_ObjectHideFlags: 1

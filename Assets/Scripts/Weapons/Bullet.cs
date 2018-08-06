@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour {
   public float damage;
   public float bulletSpeed;
   public float lifetime;
+  public GameObject bulletDestroyEffect;
   Vector3 target;
   Vector2 direction;
 
@@ -27,5 +28,9 @@ public class Bullet : MonoBehaviour {
     if(other.tag == "Building") {
       Destroy(gameObject);
     }
+  }
+
+  private void OnDestroy() {
+    Instantiate(bulletDestroyEffect, transform.position, Quaternion.identity);
   }
 }

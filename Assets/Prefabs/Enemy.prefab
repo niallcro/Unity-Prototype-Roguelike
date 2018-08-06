@@ -134,9 +134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a620f392c8854267bf657467f3598ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  aggroRange: 5
-  movementSpeed: 2.5
+  health: 1
+  aggroRange: 12
+  movementSpeed: 4
   player: {fileID: 0}
 --- !u!212 &212706545998900078
 SpriteRenderer:
@@ -171,7 +171,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 778327361
-  m_SortingLayer: 2
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: bccf17843041640cb84d0cfe1d0f62c7, type: 3}
   m_Color: {r: 0.9485294, g: 0.13948964, b: 0.13948964, a: 1}

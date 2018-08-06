@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4741103515475794}
   - component: {fileID: 212079271947281602}
   - component: {fileID: 58751910904199548}
-  - component: {fileID: 114511769038975902}
   - component: {fileID: 50263938822044914}
+  - component: {fileID: 114511769038975902}
   m_Layer: 0
   m_Name: HandgunBullet
   m_TagString: Untagged
@@ -92,6 +92,8 @@ MonoBehaviour:
   damage: 1
   bulletSpeed: 14
   lifetime: 10
+  bulletDestroyEffect: {fileID: 1727724073145996, guid: e1653a70546e0465f8e55f805f78519c,
+    type: 2}
 --- !u!212 &212079271947281602
 SpriteRenderer:
   m_ObjectHideFlags: 1
